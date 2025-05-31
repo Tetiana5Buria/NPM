@@ -1,0 +1,16 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 15,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+        "semi": ["error", "always"]  // Вимога крапки з комою в кінці кожного рядка
+    }
+}
