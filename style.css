@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6d9cd;
+  }
+
+  .timer-container {
+    text-align: center;
+    background-color: rgb(183, 187, 193);
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 70px;
+  }
+
+  .input-section input {
+    width: 50px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .input-section button {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .start-button {
+    background-color: #19de44;
+    color: rgb(195, 211, 187);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+     .start-button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .time-display {
+        font-size: 32px;
+        margin: 20px 0;
+      }
+      .control-btn button {
+        font-size: 32px;
+        color: #e1bc19;
+        cursor: pointer;
+      }
+
+      .control-btn:hover {
+        background-color: #575050;
+      }
+
+      .control-btn:active {
+        transform: scale(1.1);
+      }
