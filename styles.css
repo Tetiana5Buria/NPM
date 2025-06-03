@@ -14,22 +14,19 @@ body {
   padding: 40px;
   border-radius: 10px;
 }
-
-h1 {
+.timer-container h1 {
   font-size: 42px;
   margin-bottom: 20px;
   text-align: center;
 }
-
-.input-section {
+.timer-container .input-section {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   margin-bottom: 70px;
 }
-
-.input-section input {
+.timer-container .input-section input {
   width: 50px;
   padding: 5px;
   font-size: 24px;
@@ -37,20 +34,24 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-p{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.timer-container p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 26px;
 }
-
-.control-btn {
+.timer-container .control-btn {
   background: none;
   border: none;
   font-size: 32px;
   cursor: pointer;
   color: #6c6b62;
 }
-
-.start-button {
+.timer-container .control-btn:hover {
+  background-color: #575050;
+}
+.timer-container .control-btn:active {
+  transform: scale(1.1);
+}
+.timer-container .start-button {
   background-color: #19de44;
   color: rgb(195, 211, 187);
   padding: 10px 20px;
@@ -60,21 +61,12 @@ p{
   cursor: pointer;
   justify-content: center;
 }
-
-.start-button:hover {
+.timer-container .start-button:hover {
   background-color: #aecb0e;
-
 }
-
-.time-display {
+.timer-container .time-display {
   font-size: 32px;
   margin: 20px 0;
 }
 
-.control-btn:hover {
-  background-color: #575050;
-}
-
-.control-btn:active {
-  transform: scale(1.1);
-}
+/*# sourceMappingURL=styles.css.map */
