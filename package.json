@@ -10,7 +10,8 @@
     "dev": "live-server --open=./public/ --host=localhost --watch=./public/",
     "build": "NODE_ENV=production webpack",
     "prepare": "npx crlf --set=LF node_modules/.bin/live-server && husky install",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "type": "module"
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -197,6 +198,7 @@
     "isobject": "^3.0.1",
     "jest-worker": "^27.5.1",
     "js-tokens": "^4.0.0",
+    "jsdom": "^26.1.0",
     "jsesc": "^2.5.2",
     "json-parse-even-better-errors": "^2.3.1",
     "json-schema-traverse": "^1.0.0",

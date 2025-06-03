@@ -11,6 +11,10 @@
     },
     "rules": {
         "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-        "semi": ["error", "always"]  // Вимога крапки з комою в кінці кожного рядка
-    }
+        "semi": ["error", "always"]
+    },
+    "globals": {
+        "moment": "readonly"
+      }
+
 }

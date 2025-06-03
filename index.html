@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timer</title>
- <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script> -->
 </head>
 <body>
   <div class="timer-container">
     <h1>Timer</h1>
     <p>Вкажіть час в хвилинах</p>
     <div class="input-section" id="inputSection">
-
-      <button id="decrement"  class="control-btn"> - </button>
+      <button id="decrement" class="control-btn">-</button>
       <input type="number" id="minutesInput" value="" min="1">
-      <button id="increment" class="control-btn"> +  </button>
+      <button id="increment" class="control-btn">+</button>
     </div>
     <button class="start-button" id="startButton">Start</button>
     <div class="time-display" id="timeDisplay" style="display: none;">0:00</div>
   </div>
-<script src="./index.js"></script>
+  <script src="./index.js"></script> <!-- Remove type="module" -->
 </body>
 </html>
