@@ -1,3 +1,8 @@
+## 🧑🏽‍💻
+link on my project: https://tetiana5buria.github.io/NPM/mysrc/
+
+
+
 # live-reload-vanilla-website-template
 
 Starter template to build a website without a front-end framework but making use of Webpack to support writing modern JavaScript (ES6+), including ES Modules and Sass.
