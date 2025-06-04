@@ -12,7 +12,7 @@ body {
   font-style: normal;
   background:
     linear-gradient(rgba(67, 90, 67, 0.5), rgba(0, 128, 0, 0.5)),
-    url('../images/timer.jpg');
+    url('/mysrc/images/timer.jpg');
 
   background-size: cover;
   background-position: center;
