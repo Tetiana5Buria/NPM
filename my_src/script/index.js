@@ -1,5 +1,3 @@
-
-
 const minutesInput = document.getElementById('minutesInput');
 const decrementButton = document.getElementById('decrement');
 const incrementButton = document.getElementById('increment');
@@ -26,10 +24,6 @@ incrementButton.addEventListener('click', () => {
 
 startButton.addEventListener('click', () => {
   let minutes = parseInt(minutesInput.value) || 1;
-  if (minutes < 1) {
-    alert('Будь ласка, введіть значення більше 0');
-    return;
-  }
   totalSeconds = minutes * 60;
   timerText.textContent = 'Залишилось:';
   inputSection.style.display = 'none';
@@ -42,12 +36,7 @@ startButton.addEventListener('click', () => {
 function updateTimer() {
   if (totalSeconds <= 0) {
     clearInterval(timerInterval);
-    timeDisplay.textContent = '0:00';
-    timerText.textContent = 'Вкажіть час у хвилинах';
-   /*  inputSection.style.display = 'flex'; */
-    startButton.style.display = 'block';
-    timeDisplay.style.display = 'none';
-    minutesInput.value = 1;
+    updateTimerDisplay();
     return;
   }
   totalSeconds--;
@@ -60,5 +49,13 @@ function updateDisplay() {
   timeDisplay.textContent = formattedTime;
 }
 
-console.log(moment().format()); // Тестування moment
-console.log('hello world');
+  function updateTimerDisplay() {
+    timeDisplay.textContent = '0:00';
+    timerText.textContent = 'Вкажіть час у хвилинах:';
+    timeDisplay.style.display = 'none';
+    inputSection.style.display = 'flex';
+    minutesInput.value = 1;
+    startButton.style.display = 'block';
+    startButton.style.margin = '0 auto';
+  }
+

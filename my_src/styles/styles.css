@@ -1,16 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Monsieur+La+Doulaise&family=Playwrite+HU:wght@100..400&display=swap');
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  margin: 50px;
-  font-family: Arial, sans-serif;
-  background-color: #d6d9cd;
+  height: 100vh;
+  margin: 0;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background:
+    linear-gradient(rgba(67, 90, 67, 0.5), rgba(0, 128, 0, 0.5)),
+    url('../images/timer.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 
 .timer-container {
   text-align: center;
-  background-color: rgb(183, 187, 193);
+  background: radial-gradient( circle at center ,rgba(221, 232, 221, 0.5), rgba(52, 105, 52, 0.8));
   padding: 40px;
   border-radius: 10px;
 }
@@ -35,7 +47,9 @@ body {
   border-radius: 5px;
 }
 .timer-container p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
   font-size: 26px;
 }
 .timer-container .control-btn {
@@ -46,14 +60,15 @@ body {
   color: #6c6b62;
 }
 .timer-container .control-btn:hover {
-  background-color: #575050;
+
+  transform: scale(1.5);
 }
 .timer-container .control-btn:active {
   transform: scale(1.1);
 }
 .timer-container .start-button {
-  background-color: #19de44;
-  color: rgb(195, 211, 187);
+  background-color: #326b3f;
+  color: rgb(70, 184, 12);
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -62,7 +77,8 @@ body {
   justify-content: center;
 }
 .timer-container .start-button:hover {
-  background-color: #aecb0e;
+  background-color: #0b531a;
+  transform: scale(1.1);
 }
 .timer-container .time-display {
   font-size: 32px;
